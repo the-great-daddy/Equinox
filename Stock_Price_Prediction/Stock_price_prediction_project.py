@@ -43,7 +43,7 @@ data = data.astype('float32')
 scaler = MinMaxScaler(feature_range=(0, 1))
 data = scaler.fit_transform(data)
 
-# # split into train and test sets (70% - 30%)
+# # split into train and test sets (80% - 20%)
 train, test = data[0:int(len(data) * 0.8), :], data[int(len(data) * 0.8):len(data), :]
 
 # create the training data and test data matrix
