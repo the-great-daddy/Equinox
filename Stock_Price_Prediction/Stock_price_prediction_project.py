@@ -25,7 +25,7 @@ def reconstruct_data(data_set, n=1):
 
 
 # we want to make sure the results will be the same every time we run the algorithm
-np.random.seed(1)
+# np.random.seed(1)
 
 # load the dataset
 data_frame = pd.read_csv('Nifty50_Historical_Data.csv', usecols=[1])
